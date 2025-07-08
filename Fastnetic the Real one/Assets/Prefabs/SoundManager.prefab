@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4054852885527229186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2182098378998957670}
+  - component: {fileID: 917004194214932866}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2182098378998957670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4054852885527229186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37.458817, y: 2.3424747, z: -0.3820833}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &917004194214932866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4054852885527229186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a251cf75fa3007a469df708ab579db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - name: Magnetic
+    clip: {fileID: 8300000, guid: e8f0224bccbb9f44db9da1eb23ba8c3c, type: 3}
+    volume: 0.729
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+    RandomizePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.1
+    IsPlayed: 0
+  - name: Jump
+    clip: {fileID: 8300000, guid: 18abdf49f5bf7fc429624e564884afe4, type: 3}
+    volume: 0.588
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 1
+    minPitch: 0.62
+    maxPitch: 0.86
+    IsPlayed: 0
+  - name: Walking
+    clip: {fileID: 8300000, guid: 835e142b8f343e94386a692881f1786c, type: 3}
+    volume: 0.245
+    pitch: 0.45
+    loop: 1
+    source: {fileID: 0}
+    RandomizePitch: 0
+    minPitch: 0.41
+    maxPitch: 0.45
+    IsPlayed: 0
+  - name: Metal
+    clip: {fileID: 8300000, guid: 0b58aaa29f81550458c40cedced524ce, type: 3}
+    volume: 0.561
+    pitch: 0.98
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 1
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: Land
+    clip: {fileID: 8300000, guid: 77d32f1b9bd2d90479b9c868649f1c99, type: 3}
+    volume: 0.403
+    pitch: 0.98
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 1
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: Alarm
+    clip: {fileID: 8300000, guid: 0067a5b16f5c442479c9d5e8365c8f63, type: 3}
+    volume: 0.249
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 0
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: Blackhole
+    clip: {fileID: 8300000, guid: 2c21316dc8cdc3d4c83a7fc3c93f9b27, type: 3}
+    volume: 0.249
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 0
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: Theme1
+    clip: {fileID: 8300000, guid: 37da07fed7a779949bb6be3b424b62b7, type: 3}
+    volume: 0.171
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+    RandomizePitch: 0
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: Timer
+    clip: {fileID: 8300000, guid: 8612ce11b8ccb984db0a8f0bd4bf40b8, type: 3}
+    volume: 0.171
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+    RandomizePitch: 0
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: DoorOpen
+    clip: {fileID: 8300000, guid: c156aaae9aca02547bb46e3356ff34ef, type: 3}
+    volume: 0.55
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 0
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: Shooting
+    clip: {fileID: 8300000, guid: 0d6e2c37a7c07824e8e17c1afc7414d9, type: 3}
+    volume: 0.35
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 1
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: Breaking
+    clip: {fileID: 8300000, guid: 3fc0e0459614c1a4b897f52128cf5e06, type: 3}
+    volume: 0.229
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 1
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: ButtonSelect
+    clip: {fileID: 8300000, guid: 80fac2af0fe6a0a4ab5232a8b15d9c3f, type: 3}
+    volume: 0.229
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 1
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: ButtonClick
+    clip: {fileID: 8300000, guid: fb3e4c20e32f4c3438073836be33b0f8, type: 3}
+    volume: 0.229
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 1
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: Death
+    clip: {fileID: 8300000, guid: 4aec572baa607184cbc2f64de56b2392, type: 3}
+    volume: 0.229
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 1
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
+  - name: Victory
+    clip: {fileID: 8300000, guid: 9774bf2f5afef1641af251b1f4fca9ea, type: 3}
+    volume: 0.229
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    RandomizePitch: 1
+    minPitch: 0.68
+    maxPitch: 1.08
+    IsPlayed: 0
