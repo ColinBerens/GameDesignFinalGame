@@ -43,5 +43,3 @@ public class IdleState : IPlayerState
 		_controller.Animator.SetBool("Idle", false);
 	}
 }
-
-

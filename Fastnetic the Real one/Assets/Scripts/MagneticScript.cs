@@ -9,7 +9,7 @@ using System.Collections;
 public class MagneticScript : MonoBehaviour
 {
     [Header("Input Manager")]
-    [SerializeField] private InputScript _inputScript;
+    [SerializeField] private InputScript _inputScript; // needs to be a static 
     [Header("Range Object")]
     [SerializeField] private GameObject _rangeObject;
     [SerializeField] Transform _pointA;
@@ -24,14 +24,13 @@ public class MagneticScript : MonoBehaviour
     [SerializeField] private Color _repelColor = Color.red;
     [SerializeField] private Color _defaultColor = Color.white;
 
-    [SerializeField] private Animator _animator;
+    [SerializeField] private Animator _animator; // needs a seperate script for the animator to handle the animations and the state machine
 
-	private float _angleVelocity;
+    private float _angleVelocity;
     private float _smoothTime = 0.1f;
     List<MagneticObjectsScript> _magneticObjects = new List<MagneticObjectsScript>();
-    [SerializeField] private SoundManager _soundManager;
+    [SerializeField] private SoundManager _soundManager; // needs to be a static and no sound manager
     bool _playedSound = false;
-	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
     {
         _soundManager = FindFirstObjectByType<SoundManager>();
@@ -51,7 +50,7 @@ public class MagneticScript : MonoBehaviour
     {
         _rangeObject.transform.position = Vector3.Lerp(_rangeObject.transform.position, transform.position, 100f);
 
-        if (_inputScript.ViewInput == Vector2.zero) return; // Check if the joystick is not pressed
+        if (_inputScript.ViewInput == Vector2.zero) return; 
         Vector2 joystickDirection = _inputScript.ViewInput.normalized;
         float targetAngle = Mathf.Atan2(joystickDirection.y, joystickDirection.x) * Mathf.Rad2Deg;
         targetAngle = (targetAngle + 360f) % 360f; 
@@ -62,7 +61,6 @@ public class MagneticScript : MonoBehaviour
         _rangeObject.transform.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (_inputScript.MagneticInput)

@@ -25,7 +25,7 @@ public class MovementScript : MonoBehaviour
 	public Animator Animator { get; private set; }
 	public bool IsSoundPlaying { get; set; }
 
-	public Rigidbody2D RB;
+	public Rigidbody2D RB; 
 	public float HorizontalInput { get; private set; }
 
 	public bool IsGrounded { get; private set; }
